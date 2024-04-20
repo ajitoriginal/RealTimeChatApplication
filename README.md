@@ -1,3 +1,5 @@
+After taking the pull of this repo, run npm i in both directories [LiveChatApp\backend & LiveChatApp\frontend]
+
 To Start backend:
   navigate to LiveChatApp\backend>
   then run the command: npm start
