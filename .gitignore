@@ -1,0 +1,11 @@
+# Logs
+logs
+*.log
+
+uploads/*
+!uploads/.gitkeep
+.vscode/
+node_modules/
+./backend/node_modules/
+.env
+package-lock.json
