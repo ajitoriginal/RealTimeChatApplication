@@ -11,6 +11,10 @@ const App = () => {
   const messagesEndRef = useRef(null);
 
   useEffect(() => {
+
+    if (messagesEndRef.current) {
+      messagesEndRef.current.scrollIntoView({ behavior: 'smooth' });
+    }
     // Initialize with previous messages
     socket.on('init', (data) => {
       setUsername(data.username)

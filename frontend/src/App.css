@@ -127,3 +127,16 @@ body {
 .message-timestamp {
   text-align: right
 }
+
+button[type="submit"] {
+  /* Your existing button styles */
+  padding: 8px 16px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+button[type="submit"]:disabled {
+  background-color: #989696; /* Grey background color */
+  color: #4a4848;
+}
