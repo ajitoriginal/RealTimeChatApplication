@@ -15,6 +15,7 @@ const App = () => {
     if (messagesEndRef.current) {
       messagesEndRef.current.scrollIntoView({ behavior: 'smooth' });
     }
+    
     // Initialize with previous messages
     socket.on('init', (data) => {
       setUsername(data.username)
@@ -34,6 +35,7 @@ const App = () => {
     // return () => {
     //   socket.disconnect()
     // }
+
   }, [messages])
 
   const handleUsernameSubmit = (e) => {
@@ -66,9 +68,11 @@ const App = () => {
         </div>
       ) : (
         <div className="chat-container">
+          
           <div className="chat-header">
             <h1>Live Chat App{username && <span> - {username}</span>}</h1>
           </div>
+
           <div className="chat-messages">
             {messages.map((msg, idx) => (
               <div key={idx} className={`message ${msg.username === username ? 'sent' : (msg.username === 'system' ? 'centered' : 'received')}`}>
@@ -83,6 +87,7 @@ const App = () => {
             ))}
             <div ref={messagesEndRef} /> {/* Empty div for scrolling to bottom */}
           </div>
+
           <form onSubmit={handleMessageSubmit} className="message-input">
             <input
               type="text"
@@ -92,6 +97,7 @@ const App = () => {
             />
             <button type="submit">Send</button>
           </form>
+
         </div>
       )}
     </div>
