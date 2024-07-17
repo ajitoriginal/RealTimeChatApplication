@@ -1,8 +1,6 @@
 • Real-Time Conversations: Facilitate instant messaging with a user-friendly interface.
 • Organized Message Display: Show current user messages on the right and others on the left for clarity.
 • Usernames and Timestamps: Each chat entry includes usernames and timestamps for context and tracking.
-• Real-Time Conversations: Facilitate instant messaging with a user-friendly interface. • Organized Message Display: Show current user messages on the right and others on the left for clarity. • Usernames and Timestamps: Each chat entry includes usernames and timestamps for context and tracking.
-
 Skills: Node.js · MongoDB · Express.js · React.js · Socket.io
 
 
